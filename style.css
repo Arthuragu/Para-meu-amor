@@ -1,0 +1,394 @@
+/* Reset básico para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+  background-color: #7e0303; /* Cor de fundo vermelho escuro */
+  font-family: 'Indie Flower', cursive; /* Fonte personalizada */
+  text-align: center; /* Centraliza todo o texto */
+  overflow-x: hidden; /* Esconde barra de rolagem horizontal */
+  position: relative; /* Necessário para posicionamento das pétalas */
+}
+
+/* Estilos para o contêiner principal do site */
+.container.site-content {
+  display: none; /* Inicialmente escondido */
+  padding: 20px;
+  max-width: 900px; /* Limita a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilo para imagens grandes de título */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Espaço abaixo da imagem de título */
+}
+
+/* Estilos para a seção do Spotify */
+.spotify {
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para o Spotify */
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* Estilos para agrupar o nome e o contador */
+.nome-e-contador-wrapper {
+  background: rgba(242, 235, 235, 0.4); /* Fundo semi-transparente do contador */
+  border-radius: 40px;
+  padding: 11px;
+  margin: 70px auto 50px auto; /* Adicionei margin-bottom para o espaço desejado */
+  max-width: 600px;
+  color: white;
+}
+
+/* Estilos para o título Arthur e Vitória */
+.nome-e-contador-wrapper h3 {
+  color: #a00000; /* Um vermelho escuro mais legível sobre o fundo claro */
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais escura para contraste */
+}
+
+/* Estilos para o contador de tempo */
+.contador-simples {
+  color: #ffffff; /* Mudei para uma cor mais escura para legibilidade sobre o fundo claro do wrapper */
+  background: transparent;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Estilos para o carrossel de fotos (ajustes para Bootstrap) */
+.carousel {
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-caption {
+  background-color: transparent;
+  bottom: 20px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Estilos para as seções de frases e mensagem */
+.frases, .mensagem {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+  /* background: #fff8f8; /* Fundo claro para estas seções */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para destaque */
+  color: #333; /* Cor de texto padrão para estas seções */
+}
+
+.frases h3, .mensagem h3 {
+  color: #d63384;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.frases p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.mensagem .message-image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Estilos para as pétalas caindo */
+.petalas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.petala {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url('rosas.png') no-repeat center center / contain;
+  animation: cair 10s linear infinite;
+  opacity: 0.8;
+}
+
+/* Animação das pétalas */
+@keyframes cair {
+  0% { transform: translateY(-50px) rotate(0deg); opacity: 0.8; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* Estilos para o formulário de senha */
+#senha-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #7e0303;
+  color: white;
+}
+
+#senha-form h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#senha-form input {
+  padding: 12px;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+#senha-form button {
+  padding: 12px 25px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+#senha-form button:hover {
+  background-color: #bb2871;
+}
+
+/* Estilos para h2 (geral, pode ser sobrescrito) */
+h2 {
+  color: #d63384;
+  margin: 30px 0;
+  font-size: 2.2em;
+}
+
+/* Estilo para garantir que imagens em geral sejam responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para a janela/imagem flutuante de aniversário */
+.aniversario-popup {
+  display: none; /* <--- O MAIS IMPORTANTE: Inicia escondido por padrão */
+  position: fixed; /* Fixa na tela */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+  /* Usa Flexbox para centralizar o conteúdo (a imagem e o botão) */
+  display: flex; /* Mantenha 'flex' aqui para o layout interno, mas o padrão será 'none' */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1000; /* Acima de todos os outros elementos */
+  padding: 10px; /* Um pouco de padding para garantir espaço nas bordas */
+  box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+  flex-direction: column; /* Para empilhar a imagem e o botão, se houvesse mais de um item centralizado */
+  gap: 15px; /* Espaçamento entre a imagem e o botão */
+}
+
+.aniversario-popup img {
+  max-width: 90%; /* Limita a largura máxima da imagem a 90% do contêiner */
+  max-height: 90%; /* Limita a altura máxima da imagem a 90% do contêiner */
+  width: auto; /* Permite que a largura se ajuste automaticamente */
+  height: auto; /* Permite que a altura se ajuste automaticamente */
+  object-fit: contain; /* Redimensiona a imagem para caber na área, mantendo a proporção */
+  border-radius: 15px; /* Bordas arredondadas para a imagem, se desejar */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar a imagem */
+}
+
+/* Estilos para o botão de fechar (X) dentro do popup */
+.aniversario-popup .close-btn { /* Adicionei .aniversario-popup para especificidade */
+  position: absolute; /* Posição absoluta em relação ao .aniversario-popup */
+  top: 15px;
+  right: 25px;
+  color: #fff; /* Cor branca para o "X" para contrastar com o fundo escuro */
+  font-size: 3em; /* Tamanho maior para facilitar o clique */
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para destacar */
+  z-index: 1001; /* Garante que esteja acima da imagem, se houver sobreposição */
+}
+
+.aniversario-popup .close-btn:hover,
+.aniversario-popup .close-btn:focus {
+  color: #ddd; /* Escurece um pouco ao passar o mouse */
+  text-decoration: none;
+}
+
+/* Limpeza: Remova estas regras se não são mais usadas */
+/* .popup-content, .popup-content h2, .popup-content p, .popup-gif (já coberto por .aniversario-popup img) */
+/* Removi a regra .close-btn genérica, pois agora ela é específica para .aniversario-popup .close-btn */
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.8em;
+  }
+
+  .nome-e-contador-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .nome-e-contador-wrapper h3 {
+    font-size: 1.8em;
+  }
+
+  .contador-simples {
+    font-size: 1.2em;
+  }
+
+  .frases, .mensagem {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .frases h3, .mensagem h3 {
+    font-size: 1.5em;
+  }
+
+  #senha-form h2 {
+    font-size: 1.8em;
+  }
+
+  .aniversario-popup img { /* Ajuste para telas menores */
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .aniversario-popup .close-btn {
+    font-size: 2.5em; /* Tamanho menor do X em telas pequenas */
+    top: 10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nome-e-contador-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .nome-e-contador-wrapper h3 {
+    font-size: 1.5em;
+  }
+
+  .contador-simples {
+    font-size: 1em;
+  }
+
+  #senha-form input, #senha-form button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .aniversario-popup img { /* Ajuste para telas menores */
+    max-width: 98%;
+    max-height: 98%;
+  }
+
+  .aniversario-popup .close-btn {
+    font-size: 2em; /* Tamanho ainda menor do X em telas muito pequenas */
+    top: 5px;
+    right: 15px;
+  }
+}
+
+/* style.css */
+
+/* Esconde o conteúdo principal do site por padrão */
+.site-content {
+  display: none;
+}
+
+/* Esconde o popup de aniversário por padrão */
+.aniversario-popup {
+  display: none;
+  /* Certifique-se de que outras propriedades como position, z-index, etc., estejam corretas */
+}
+
+/* Mantém o formulário de senha visível inicialmente */
+#senha-form {
+  display: flex; /* ou block, dependendo do seu layout desejado para o formulário */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para centralizar verticalmente, se for a única coisa na tela */
+  flex-direction: column;
+}
+
+/* Adicione ou ajuste os estilos existentes para o popup para que ele apareça centralizado */
+.aniversario-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  display: flex; /* Será alterado para 'none' por padrão e 'flex' quando a data for correta */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que esteja acima de outros elementos */
+  color: white; /* Para o texto do popup, se houver */
+  text-align: center;
+}
+
+.aniversario-popup img {
+  max-width: 90%; /* Ajuste o tamanho da imagem */
+  max-height: 90vh; /* Ajuste o tamanho da imagem */
+}
+
+.aniversario-popup .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}

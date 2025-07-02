@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Meu Amor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="senha-form">
+    <h2>Digite a Senha 💍</h2>
+    <input type="password" id="senha" placeholder="Ex: 03072024">
+    <button onclick="verificarSenha()">Entrar</button>
+  </div>
+
+  <div id="aniversarioPopup" class="aniversario-popup">
+    <img src="feliz.gif" alt="Feliz Aniversário de Namoro">
+    <span class="close-btn" onclick="fecharPopup()">×</span>
+  </div>
+
+  <div class="container site-content" id="site">
+    <img src="começo.png" alt="Para meu amor" class="img-fluid hero-image">
+
+    <div class="spotify">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6emf8vvs6WnsIEyrlbfjWU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="nome-e-contador-wrapper">
+      <h3>Arthur e Vitória</h3>
+      <div class="contador-simples" id="contador"></div>
+    </div>
+    
+    <div id="nossasFotosCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div style="color: #ffffff;"><h3>Nossas Fotos</h3></div>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
+        <button type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1ano.JPEG" class="d-block w-100" alt="Nosso dia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>03/07</h5>
+            <p>Nosso dia.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Imagem do WhatsApp de 2025-06-30 à(s) 16.40.07_a4e99d41.jpg" class="d-block w-100" alt="Nossa primeira foto">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>07/05</h5>
+            <p>Nossa primeira foto.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="1dia.JPEG" class="d-block w-100" alt="Primeira saída oficial">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>29/05</h5>
+            <p>Primeira saída oficial.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pier21.JPEG" class="d-block w-100" alt="Já somos namorados">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>31/05</h5>
+            <p>Já somos namorados.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="barco.JPEG" class="d-block w-100" alt="Barco">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="complexo.JPEG" class="d-block w-100" alt="Complexo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="dias dos.JPEG" class="d-block w-100" alt="Dias dos">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="festa junina.JPEG" class="d-block w-100" alt="Festa junina">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="festa.JPEG" class="d-block w-100" alt="Festa">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="lago.JPEG" class="d-block w-100" alt="Lago">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="namorados.JPEG" class="d-block w-100" alt="Namorados">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="praia.JPEG" class="d-block w-100" alt="Praia">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="restaurante.JPEG" class="d-block w-100" alt="Restaurante">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="shopping.JPEG" class="d-block w-100" alt="Shopping">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="sol.JPEG" class="d-block w-100" alt="Sol">
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#nossasFotosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="mensagem">
+      <img src="amo voce.png" alt="Amo você" class="img-fluid message-image">
+      <img src="final.png" alt="Te amo" class="img-fluid message-image">
+    </div>
+  </div>
+
+  <div class="petalas" id="petalas"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Script para verificar a senha
+    const senhaCorreta = "03072024"; // Altere para a data do pedido, por exemplo, 03 de julho de 2024
+
+    function verificarSenha() {
+      const senha = document.getElementById("senha").value;
+      if (senha === senhaCorreta) {
+        document.getElementById("senha-form").style.display = "none";
+        document.getElementById("site").style.display = "block";
+        verificarDataAniversario(); // Chama a função para verificar o popup APÓS a senha correta
+      } else {
+        alert("Senha incorreta! Você não me AMA??.");
+      }
+    }
+
+    // Script para o contador de dias juntos
+    const inicio = new Date("2024-07-03T00:00:00"); // Altere para a data e hora exata do início do namoro
+    function atualizarContador() {
+      const agora = new Date();
+
+      let anos = agora.getFullYear() - inicio.getFullYear();
+      let meses = agora.getMonth() - inicio.getMonth();
+      let dias = agora.getDate() - inicio.getDate();
+      let horas = agora.getHours() - inicio.getHours();
+      let minutos = agora.getMinutes() - inicio.getMinutes();
+      let segundos = agora.getSeconds() - inicio.getSeconds();
+
+      // Ajustes para valores negativos
+      if (segundos < 0) {
+        minutos--;
+        segundos += 60;
+      }
+      if (minutos < 0) {
+        horas--;
+        minutos += 60;
+      }
+      if (horas < 0) {
+        dias--;
+        horas += 24;
+      }
+      if (dias < 0) {
+        meses--;
+        const mesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0);
+        dias += mesAnterior.getDate();
+      }
+      if (meses < 0) {
+        anos--;
+        meses += 12;
+      }
+
+      document.getElementById("contador").innerHTML =
+        `Juntos há<br>${anos} anos, ${meses} meses, ${dias} dias,<br>${horas} horas, ${minutos} minutos, ${segundos} segundos.`;
+    }
+    setInterval(atualizarContador, 1000);
+    atualizarContador(); // Chama a função uma vez para exibir o contador imediatamente
+
+    // Script para as pétalas caindo
+    function criarPetalas() {
+      const numPetalas = 30;
+      const petalasContainer = document.getElementById("petalas");
+      for (let i = 0; i < numPetalas; i++) {
+        const petala = document.createElement("div");
+        petala.className = "petala";
+        petala.style.left = Math.random() * 100 + "vw";
+        petala.style.animationDelay = (Math.random() * 10) + "s";
+        petala.style.animationDuration = (8 + Math.random() * 7) + "s";
+        petala.style.opacity = (0.5 + Math.random() * 0.5);
+        petalasContainer.appendChild(petala);
+      }
+    }
+    criarPetalas();
+
+    // Inicializa o carrossel do Bootstrap
+    var myCarousel = document.querySelector('#nossasFotosCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 3000,
+      pause: 'hover'
+    })
+
+   // Novo script para esconder elementos ao carregar a página
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("site").style.display = "none";
+    document.getElementById("aniversarioPopup").style.display = "none";
+    document.getElementById("senha-form").style.display = "flex"; // Garante que o formulário de senha esteja visível
+  });
+
+  // Lógica da janela flutuante de aniversário
+  function verificarDataAniversario() {
+    const hoje = new Date();
+    const dia = hoje.getDate();
+    const mes = hoje.getMonth() + 1; // Mês é base 0 (janeiro é 0)
+    const ano = hoje.getFullYear();
+
+    // *** IMPORTANTE: AJUSTE ESTA DATA PARA TESTAR O POPUP HOJE (01/07/2025) ***
+    // Se você quer que o popup apareça no dia 03/07/2025, deixe como está:
+    const diaAniversario = 1; // Mudei para 3 para o exemplo de 03/07
+    const mesAniversario = 7; // Julho
+    const anoAniversario = 2025; // Ano do 1º aniversário
+
+    // Para testar AGORA (01/07/2025), mude para:
+    // const diaAniversario = 1;
+    // const mesAniversario = 7;
+    // const anoAniversario = 2025;
+
+    if (dia === diaAniversario && mes === mesAniversario && ano === anoAniversario) {
+      document.getElementById('aniversarioPopup').style.display = 'flex'; // Mostra o popup
+    } else {
+      document.getElementById('aniversarioPopup').style.display = 'none'; // Garante que esteja escondido
+    }
+  }
+
+  function fecharPopup() {
+    document.getElementById('aniversarioPopup').style.display = 'none'; // Esconde o popup
+  }
+
+  // Não descomente esta linha, ela faria o popup aparecer antes da senha!
+  // window.onload = verificarDataAniversario;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+</body>
+</html>
